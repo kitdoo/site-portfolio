@@ -1,0 +1,122 @@
+.contact-form {
+
+	
+}
+.contact-form__input {
+	color: @lorange;
+	font-size: 16px;
+	font-weight: 700;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px 19px;
+	border: none;
+	-webkit-border-radius: 8px;
+	        border-radius: 8px;
+	background-color: #FFF;
+	border: 3px solid #fff;
+	&:hover,&:active,&:focus {
+		border: 3px solid #eec4a1;
+		
+	}
+	-webkit-transition: border-color 0.3s ease-in;
+	   -moz-transition: border-color 0.3s ease-in;
+	    -ms-transition: border-color 0.3s ease-in;
+	     -o-transition: border-color 0.3s ease-in;
+	        transition: border-color 0.3s ease-in;
+	
+
+	
+}
+.contact-form__textarea {
+	font-size: 16px;
+	font-weight: 700;
+	color: @lorange;
+	width: 100%;
+	height: 128px;
+	margin-bottom: 10px;
+	padding: 10px 19px;
+	border: none;
+	-webkit-border-radius: 8px;
+	        border-radius: 8px;
+	background-color: #FFF;
+	border: 3px solid #fff;
+	&:hover,&:active,&:focus {
+		border: 3px solid #eec4a1;
+		padding: 10px 19px;
+		
+	}
+	-webkit-transition: border-color 0.3s ease-in;
+	   -moz-transition: border-color 0.3s ease-in;
+	    -ms-transition: border-color 0.3s ease-in;
+	     -o-transition: border-color 0.3s ease-in;
+	        transition: border-color 0.3s ease-in;
+	
+	
+}
+@media (min-width: 1200px) {
+.contact-form__bg-pencil {
+	position: relative;
+}
+.contact-form__bg-pencil:after {
+	position: absolute;
+	left: 75%;
+	top: 75%;
+	display: block;
+	width: 203px;
+	height: 153px;
+	content: "";
+	background-image: url("../img/bg/pencil.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+  	}
+	
+}
+
+.contact-form__submit {
+	width: 100%;
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 8px 47px 12px;
+	text-align: center;
+	color: #fff;
+	border: 4px solid #fff;
+	-webkit-border-radius: 80px;
+	        border-radius: 80px;
+	background-color: transparent;
+	-webkit-transition: all 0.3s ease-in;
+	   -moz-transition: all 0.3s ease-in;
+	    -ms-transition: all 0.3s ease-in;
+	     -o-transition: all 0.3s ease-in;
+	        transition: all 0.3s ease-in;
+	
+	&:hover,&:focus {
+		color: @orange;
+		background-color: #FFF;
+		border-color: #FFF;
+		
+	}
+	&:active {
+		color: @orange;
+		background-color: transparent;
+		border-color: @orange;
+		
+	}
+	@media (min-width: 768px) {
+ 			font-size: 20px;
+ 			display: inline-block;
+ 			width: auto;
+  		}
+	@media (min-width: 1200px) {
+ 			font-size: 22px;
+  		}
+}
+.contact-form__input--half-width {
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+	&:last-of-type {
+		margin-right: 0;
+	}
+
+}
