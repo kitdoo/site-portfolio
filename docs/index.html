@@ -161,37 +161,38 @@
 	<!-- Портфолио -->
 <div id="portfolio" class="section section--padding-smaller section--bg-gear">
 	<div class="container">
+
 		<div class="heading heading-center ">Мои работы</div>
+
 		<!-- Фильтр работ -->
 
-		<div class="filter">
-			<ul class="filter__block">
-				<li class="filter__element">
-					<span class="filter__button filter__button--active">Все</span>
+		<div class="filter-block">
+			<ul class="filter-block__block">
+				<li class="filter-block__element">
+					<span class="filter-block__button filter-block__button--active filter"  data-filter="all">Все</span>
 				</li>
-				<li class="filter__element">
-					<span class="filter__button">HTML+CSS</span>
+				<li class="filter-block__element">
+					<span class="filter-block__button filter" data-filter=".html-css">HTML+CSS</span>
 				</li>
-				<li class="filter__element">
-					<span class="filter__button">Bootstrap</span>
+				<li class="filter-block__element">
+					<span class="filter-block__button filter" data-filter=".bootstrap">Bootstrap</span>
 				</li>
-				<li class="filter__element">
-					<span class="filter__button">Учебные</span>
+				<li class="filter-block__element">
+					<span class="filter-block__button filter" data-filter=".tutorial">Учебные</span>
 				</li>
-				<li class="filter__element">
-					<span class="filter__button">На заказ</span>
+				<li class="filter-block__element">
+					<span class="filter-block__button filter" data-filter=".payed">На заказ</span>
 				</li>
 			</ul>
 		</div>
 		<!-- //Фильтр работ -->
 
-
 			
 
 		<!-- Галерея работ 1 -->
 
-		<div class="row">
-			<div class="col-sm-4 ">
+		<div class="row" id="portfolio-projects">
+			<div class="col-sm-4 mix html-css tutorial">
 				<div class="portfolio__item">
 					<div class="portfolio-item__image">
 						<a href="#">
@@ -210,7 +211,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 mix bootstrap tutorial">
 				<div class="portfolio__item">
 					<div class="portfolio-item__image">
 						<a href="#">
@@ -229,7 +230,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 mix bootstrap tutorial">
 				<div class="portfolio__item">
 					<div class="portfolio-item__image">
 						<a href="#">
@@ -248,13 +249,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
 		<!-- //Галерея работ 1 -->
 
-
 		<!-- Галерея работ 2 -->
-		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-sm-4 mix html-css payed">
 				<div class="portfolio__item">
 					<div class="portfolio-item__image">
 						<a href="#">
@@ -273,7 +271,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 mix bootstrap payed">
 				<div class="portfolio__item">
 					<div class="portfolio-item__image">
 						<a href="#">
@@ -292,7 +290,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 mix html-css payed">
 				<div class="portfolio__item">
 					<div class="portfolio-item__image">
 						<a href="#">
@@ -374,6 +372,7 @@
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/pageScroll2id/jquery.malihu.PageScroll2id.js"></script>
+	<script src="libs/mixitup2/jquery.mixitup.min.js"></script>
 
 	<script src="js/main.js"></script>
 	<script src="js/navigation.js"></script>

@@ -1,4 +1,4 @@
-.filter{
+.filter-block{
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -8,17 +8,16 @@
 		@media (min-width: 768px) {
 			padding-top: 8px;
 			margin-bottom: 50px;
- 
   		}
 }
 
-.filter__block {
+.filter-block__block {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	text-align: center;
 }
-.filter__element {
+.filter-block__element {
 	margin: 0 0 9;
 	padding: 0;
 	display: block;
@@ -33,10 +32,9 @@
 		&:last-child {
 		margin-right: 0;
 		}
-
   	}
 }
-.filter__button {
+.filter-block__button {
 	color: #cecece;
 	padding: 10px 31px 17px;
 	cursor: pointer;
@@ -50,10 +48,13 @@
 		border: 2px solid @orange;
 		color: #000;
 	}
-
-	}
-.filter__button--active {
+}
+.filter-block__button--active {
 	padding: 10px 29px 13px;
 	border: 2px solid @orange;
 	color: #000;
+}
+
+#portfolio-projects .mix {
+	display: none;
 }

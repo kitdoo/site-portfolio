@@ -563,7 +563,7 @@ a.mouse_scroll:focus {
   background-color: #f28324;
   color: #2d2620;
 }
-.filter {
+.filter-block {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -571,55 +571,58 @@ a.mouse_scroll:focus {
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .filter {
+  .filter-block {
     padding-top: 8px;
     margin-bottom: 50px;
   }
 }
-.filter__block {
+.filter-block__block {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
 }
-.filter__element {
+.filter-block__element {
   margin: 0 0 9;
   padding: 0;
   display: block;
 }
 @media (min-width: 768px) {
-  .filter__element {
+  .filter-block__element {
     margin-right: 0;
     display: inline-block;
   }
 }
 @media (min-width: 1200px) {
-  .filter__element {
+  .filter-block__element {
     margin-right: 15px;
   }
-  .filter__element:last-child {
+  .filter-block__element:last-child {
     margin-right: 0;
   }
 }
-.filter__button {
+.filter-block__button {
   color: #cecece;
   padding: 10px 31px 17px;
   cursor: pointer;
   display: inline-block;
 }
-.filter__button:hover {
+.filter-block__button:hover {
   color: #000;
 }
-.filter__button:active,
-.filter__button:focus {
+.filter-block__button:active,
+.filter-block__button:focus {
   padding: 10px 29px 13px;
   border: 2px solid #f28324;
   color: #000;
 }
-.filter__button--active {
+.filter-block__button--active {
   padding: 10px 29px 13px;
   border: 2px solid #f28324;
   color: #000;
+}
+#portfolio-projects .mix {
+  display: none;
 }
 .portfolio__item {
   margin-left: auto;
