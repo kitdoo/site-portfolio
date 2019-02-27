@@ -893,6 +893,41 @@ a.mouse_scroll:focus {
 .contact-form__input--half-width:last-of-type {
   margin-right: 0;
 }
+label.error {
+  background-color: #FF7F50;
+  display: block;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+  margin-top: -5px;
+}
+label.error {
+  background-color: #FF6347;
+  position: relative;
+  display: block;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  color: #fff;
+  padding: 5px 15px 8px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 2px;
+}
+label.error:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 40px;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #ff6347;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
 .cmn-toggle-switch {
   font-size: 0;
   position: absolute;
