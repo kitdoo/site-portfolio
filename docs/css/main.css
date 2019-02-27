@@ -679,6 +679,7 @@ a.mouse_scroll:focus {
   transition: top 0.5s ease-out;
 }
 .portfolio-item__image__hover .fa {
+  color: #fff;
   font-size: 64px;
   display: inline-block;
   position: absolute;
@@ -709,6 +710,7 @@ a.mouse_scroll:focus {
   }
 }
 .portfolio-item__image__hover span {
+  color: #fff;
   display: none;
 }
 @media (min-width: 1200px) {
