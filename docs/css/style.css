@@ -1,0 +1,43 @@
+@import "utils.css";
+
+html, body {
+	height: 100%;
+}
+
+html {
+	font-size: 10px;
+	line-height: 1.4;
+}
+
+body {
+	font-size: 1.6rem; /* 10px * 1.6 = 16px */
+}
+
+
+.block {
+	background: #ffcc00;
+	padding: 20px;
+	color: #000;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.nav {
+	background-color: #38383a;
+}
+
+.slider {
+	background-color: #0f3d79;
+}
+
+
+.line {
+	border-top: 1px solid #EAEFF5;
+}
+
+.footer {
+	background-color: #252525 ;
+}
