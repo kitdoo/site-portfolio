@@ -89,6 +89,17 @@ body {
   font-size: 1.6rem;
   /* 10px * 1.6 = 16px */
 }
+p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
 .block {
   background: #ffcc00;
   padding: 20px;
@@ -241,6 +252,19 @@ body {
   -webkit-box-shadow: 0px 4px 30px 3px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 0px 4px 30px 3px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 4px 30px 3px rgba(0, 0, 0, 0.55);
+}
+.user-photo--big {
+  max-width: 100%;
+  height: auto;
+  -webkit-border-radius: 110px;
+  border-radius: 110px;
+  background-image: url("../img/placeholders/user-avatar-female-placeholder.jpg");
+}
+@media (min-width: 1200px) {
+  .user-photo--big {
+    width: 205px;
+    height: 205px;
+  }
 }
 a.mouse_scroll {
   display: block;
@@ -411,6 +435,105 @@ a.mouse_scroll:focus {
   100% {
     opacity: 1;
   }
+}
+.section {
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 74px;
+    padding-bottom: 90px;
+  }
+}
+.section--bottom-line {
+  border-bottom: 1px solid #f8e6d6;
+}
+.section--bg-laptop {
+  background-repeat: no-repeat;
+  background-position: right 70%;
+}
+@media (min-width: 1500px) {
+  .section--bg-laptop {
+    background-image: url("../img/bg/laptop.png");
+  }
+}
+.heading {
+  color: #f28324;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0 0 19px;
+}
+@media (min-width: 768px) {
+  .heading {
+    font-size: 42px;
+  }
+}
+.heading--medium {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 16px 0 15px;
+  color: #000;
+}
+.defenition-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 43px;
+  list-style-type: none;
+}
+.defenition-list__item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 13px;
+}
+.defenition-list__def {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #f28324;
+  text-transform: uppercase;
+}
+.defenition-list__desc {
+  font-size: 14px;
+  line-height: 26px;
+}
+@media (min-width: 768px) {
+  .defenition-list__desc {
+    font-size: 16px;
+  }
+}
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+  display: inline-block;
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  padding: 11px 26px 14px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.55);
+  background-color: #f28324;
+  cursor: pointer;
+}
+.button .fa {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.button:hover,
+.buttonfocus {
+  background-color: #FFF;
+  color: #f28324;
+}
+.button:active {
+  background-color: #f28324;
+  color: #2d2620;
 }
 .header {
   height: 390px;
